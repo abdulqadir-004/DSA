@@ -1,3 +1,5 @@
+//Question number 1
+
 import java.util.Scanner;
 
 class SinglyLinkedList {
@@ -47,15 +49,22 @@ class SinglyLinkedList {
         }
     }
 
-    // Method to count the number of nodes in the linked list
-    public int countNodes() {
-        int count = 0;
-        Node current = head;
-        while (current != null) { // Traverse the list and increment count
-            count++;
-            current = current.next;
+    // Method to display the linked list in reverse order (recursive approach)
+    public void displayReverse(Node node) {
+        if (node == null) {
+            return;
         }
-        return count;
+        displayReverse(node.next); // Recurse to the end
+        System.out.println("Data = " + node.data); // Print in reverse order
+    }
+
+    public void reverseDisplay() {
+        if (head == null) {
+            System.out.println("The list is empty.");
+            return;
+        }
+        System.out.println("The list in reverse are:");
+        displayReverse(head);
     }
 
     public static void main(String[] args) {
@@ -67,9 +76,7 @@ class SinglyLinkedList {
         SinglyLinkedList list = new SinglyLinkedList();
         list.createList(n, sc);
         list.displayList();
-
-        int totalNodes = list.countNodes();
-        System.out.println("Total number of nodes = " + totalNodes);
+        list.reverseDisplay();
 
         sc.close();
     }

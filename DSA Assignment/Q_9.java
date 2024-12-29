@@ -1,3 +1,5 @@
+//Question number 9
+
 
 class myStack{
     int stack[];//initailize an array

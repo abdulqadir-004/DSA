@@ -1,3 +1,5 @@
+//Question number 6
+
 import java.util.Scanner;
 
 public class Q_6 {

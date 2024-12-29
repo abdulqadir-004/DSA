@@ -1,3 +1,5 @@
+//Question number 7
+
 import java.util.Scanner;
 
 class LinkedList {

@@ -1,3 +1,5 @@
+//Question number 10
+
 //binary tree implementation
 import java.util.Scanner;
 class Node{

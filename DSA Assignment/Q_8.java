@@ -1,3 +1,5 @@
+//Question number 8
+
 //implementing queue using array
 class myQueue{
     int queue[] = new int[5];//queue array
